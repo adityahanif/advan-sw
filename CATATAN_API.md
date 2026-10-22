@@ -263,10 +263,10 @@ Isi kolom **Proxy CORS** di Pengaturan katalog dengan salah satu di bawah ini.
 
 ### 6.1 Proxy Node (tanpa dependensi)
 
-Versi siap pakai ada di **`web/proxy.mjs`**. Jalankan dari folder proyek:
+Versi siap pakai ada di **`proxy.mjs`**. Jalankan dari folder proyek:
 
 ```
-node web/proxy.mjs
+node proxy.mjs
 ```
 
 Lalu isi `http://localhost:8787` di Pengaturan katalog (kolom ini sudah terisi
@@ -480,13 +480,13 @@ daftar terpasang sudah diambil dari `0xA6`.
 
 ## 10. Menjalankan app
 
-1. Buka `web/index.html` di Chrome/Edge desktop (atau Chrome Android).
+1. Buka `index.html` di Chrome/Edge desktop (atau Chrome Android).
    Jika Web Bluetooth tidak muncul dari `file://`, sajikan lewat localhost.
 2. Klik **Connect**, pilih jam (nama biasanya berawalan `SW`).
 3. Waktu dikirim otomatis; tombol **Sinkronkan waktu** untuk mengulang.
 4. Tab **Face bawaan** menampilkan index dari `0x84`; klik untuk memakai.
 5. Tab **Katalog** memuat tag + face. Bila muncul pesan CORS, jalankan
-   `node web/proxy.mjs`, pastikan kolom **Proxy CORS** berisi
+   `node proxy.mjs`, pastikan kolom **Proxy CORS** berisi
    `http://localhost:8787`, lalu klik **Terapkan**.
 6. Tab **Upload** menerima `.bin` (generic/JieLi) atau `.zip` (Sifli).
 7. Panel **Log paket** menampilkan hex TX/RX; tombol **Salin** untuk laporan.
