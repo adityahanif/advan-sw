@@ -1,0 +1,10 @@
+# Aset reverse-engineering berat — tidak diterbangkan
+*.xapk
+arm64_out/
+decoded_res/
+jadx_sdk/
+smali_out/
+tools/
+work/
+reverse-engineering-apk-advan-sw-untuk-sinkronisasi-smartwatch.json
+Thumbs.db
